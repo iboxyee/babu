@@ -17,7 +17,7 @@ async function viewSource() {
         html = html.replace(/(["'])(\/[^"']*)\1/g, `$1https://${hostname}$2$1`);
 
         html = html.replace(/(["'])(https?:\/\/[^"'\s]+?\.(jpg|jpeg|png|gif|webp|mp4|webm|avi|mov|mkv))\1/gi, 
-            (match, p1, p2) => `${p1}https://api.codetabs.com/v1/proxy/?quest=${encodeURIComponent(p2)}${p1}`
+            (match, p1, p2) => `${p1}https://api.codetabs.com/v1/proxy/?quest=https://thingproxy.freeboard.io/fetch/${encodeURIComponent(p2)}${p1}`
         );
 
         document.getElementById('sourceOutput').textContent = html;
