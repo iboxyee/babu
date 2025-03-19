@@ -1,70 +1,121 @@
-
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-h1 {
-    text-align: center;
-    color: #0066cc;
-}
-.input-group input[type="text"],
-.input-group button {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-}
-.input-group button {
-    background-color: #0066cc;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.button-group {
-    text-align: right;
-    margin-bottom: 10px;
-}
-.button-group button {
-    padding: 10px 15px;
-    margin-left: 5px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.btn-download { background-color: #28a745; color: white; }
-.btn-copy { background-color: #007bff; color: white; }
-.btn-lightbox { background-color: #17a2b8; color: white; }
-.footer {
-    text-align: center;
-    margin-top: 20px;
-    color: #666;
-}
-.lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-}
-.lightbox.show { display: flex; }
-.lightbox .close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-}
-.lightbox iframe {
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #0066cc;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        .input-group input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .input-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button-group {
+            margin-bottom: 10px;
+            text-align: right;
+        }
+        .button-group button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-left: 5px;
+        }
+        .btn-download {
+            background-color: #28a745;
+            color: white;
+        }
+        .btn-copy {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-lightbox {
+            background-color: #17a2b8;
+            color: white;
+        }
+        .btn-download:hover {
+            background-color: #218838;
+        }
+        .btn-copy:hover {
+            background-color: #0056b3;
+        }
+        .btn-lightbox:hover {
+            background-color: #138496;
+        }
+        pre {
+            background: #2d2d2d; /* Warna latar belakang untuk pre */
+            padding: 10px; /* Padding untuk pre */
+            border-radius: 4px; /* Border radius untuk pre */
+            overflow: auto; /* Menangani overflow */
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+        .article {
+            margin-top: 20px;
+        }
+        .article h2 {
+            color: #0066cc;
+        }
+        .article p {
+            line-height: 1.6;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox iframe {
             width: 100%;
             height: 100%;
             border: none;
-}
+        }
+        .lightbox.show {
+            display: flex;
+        }
+        .lightbox .close {
+            position: absolute;
+            top: 200px;
+            right: 20px;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
