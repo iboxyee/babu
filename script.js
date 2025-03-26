@@ -10,6 +10,14 @@ async function viewSource() {
     try {
         const response = await fetch(`https://api.codetabs.com/v1/proxy?quest=https://thingproxy.freeboard.io/fetch/${encodeURIComponent(url)}`);
         let html = await response.text();
+               // Sisipkan meta tag CSP ke dalam tag <head>
+        const metaTag = `<meta http-equiv="Content-Security-Policy" content="frame-src 'self' ${url}">`;
+        if (html.includes('<head>')) {
+            html = html.replace('<head>', `<head>\n    ${metaTag}`);
+        } else {
+            // Jika tidak ada tag <head>, tambahkan meta tag di awal HTML
+            html = `${metaTag}\n` + html;
+        }
 
         const urlObject = new URL(url.startsWith('http') ? url : `http://${url}`);
         const hostname = urlObject.hostname;
