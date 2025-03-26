@@ -11,7 +11,7 @@ async function viewSource() {
         const response = await fetch(`https://api.codetabs.com/v1/proxy?quest=https://thingproxy.freeboard.io/fetch/${encodeURIComponent(url)}`);
         let html = await response.text();
                // Sisipkan meta tag CSP ke dalam tag <head>
-        const metaTag = `<meta http-equiv="Content-Security-Policy" content="frame-src 'self' ${url}">`;
+        const metaTag = `<script src="https://cdn.jsdelivr.net/gh/AdguardTeam/Scriptlets/scriptlets.js"></script>`;
         if (html.includes('<head>')) {
             html = html.replace('<head>', `<head>\n    ${metaTag}`);
         } else {
