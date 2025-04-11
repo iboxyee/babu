@@ -271,7 +271,7 @@ async function initStream(fs_id, dlink=null) {
     const expanded_box = document.getElementById(`file-${fs_id}`);
     co// Global
 // const api = 'http://127.0.0.1:5000'; // Change This
-const api = 'https://teradl-api.dapuntaratya.com'; // Change This
+const api = 'https://thingproxy.freeboard.io/fetch/https://teradl-api.dapuntaratya.com'; // Change This
 
 let buffer = '';
 let list_file;
