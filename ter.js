@@ -271,9 +271,9 @@ async function initStream(fs_id, dlink = null) {
     loading3(`stream-${fs_id}`, true);
 
     const url_stream = await getURLStream(fs_id, dlink);
-    
-    // Redirect ke URL stream
-    window.location.href = url_stream;
+
+    // Menampilkan URL stream dengan alert
+    alert(`URL Stream: ${url_stream}`);
 
     loading3(`stream-${fs_id}`, false);
 }
