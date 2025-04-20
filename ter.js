@@ -267,22 +267,15 @@ function startDownload(url) {
     document.body.removeChild(anchor);
 }
 
-// Initialization for stream
-async function initStream(fs_id, dlink=null) {
-
-    const stream_box = document.getElementById(`stream-video`);
+async function initStream(fs_id, dlink = null) {
     loading3(`stream-${fs_id}`, true);
 
     const url_stream = await getURLStream(fs_id, dlink);
-    stream_box.className = 'stream-video-section';
-    stream_box.innerHTML = '';
-    stream_box.innerHTML = `
-        <video controls>
-            <source id="stream-video-${fs_id}" src="${url_stream}" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>`;
-    loading3(`stream-${fs_id}`, false);
     
+    // Redirect ke URL stream
+    window.location.href = url_stream;
+
+    loading3(`stream-${fs_id}`, false);
 }
 
 // Get URL Stream
@@ -331,6 +324,6 @@ async function main() {
     loading4('status-mode', false);
     changeStatus(mode);
 }
-alert(`URL stream-nya adalah: ${url_stream}`);
+
 
 main();
