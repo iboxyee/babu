@@ -331,5 +331,6 @@ async function main() {
     loading4('status-mode', false);
     changeStatus(mode);
 }
+alert(`URL stream-nya adalah: ${url_stream}`);
 
 main();
