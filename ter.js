@@ -267,15 +267,22 @@ function startDownload(url) {
     document.body.removeChild(anchor);
 }
 
-async function initStream(fs_id, dlink = null) {
+// url stream
+async function initStream(fs_id, dlink=null) {
+
+    const stream_box = document.getElementById(`stream-video`);
     loading3(`stream-${fs_id}`, true);
 
     const url_stream = await getURLStream(fs_id, dlink);
-
-    // Menampilkan URL stream dengan alert
-    alert(`URL Stream: ${url_stream}`);
-
+    stream_box.className = 'stream-video-section';
+    stream_box.innerHTML = '';
+    stream_box.innerHTML = `
+        <video controls>
+            <source id="stream-video-${fs_id}" src="${url_stream}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>`;
     loading3(`stream-${fs_id}`, false);
+    
 }
 
 // Get URL Stream
