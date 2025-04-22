@@ -277,12 +277,12 @@ async function initStream(fs_id, dlink=null) {
     stream_box.className = 'stream-video-section';
     stream_box.innerHTML = '';
     stream_box.innerHTML = `
-        <video controls>
-            <source id="stream-video-${fs_id}" src="${url_stream}" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>`;
-    loading3(`stream-${fs_id}`, false);
-    
+      
+     
+        `;
+      loading3(`stream-${fs_id}`, true);
+    window.location.href = dlink;
+}
 }
 
 // Get URL Stream
