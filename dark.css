@@ -1,0 +1,311 @@
+/* for learning progress at the home page */
+.learning-progress {
+    position: relative;
+    display: table;
+    background: rgba(255, 161, 1, 0.5);
+    width:100%;
+    height:40px;
+    -webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow:inset 0 1px 2px rgba(0,0,0,.1);
+}
+.learning-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0%;
+    height:100%;
+    background:rgba(255, 161, 1);
+    z-index: 5;
+    -webkit-box-shadow: inherit;
+    box-shadow: inherit;
+}
+.learning-progress-percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 160%;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #593c17;
+    z-index: 6;
+}
+
+/* for menu items */
+.li-act {
+    background:rgba(0, 0, 0, 0.23)
+}
+.lim:hover{
+    background:rgba(0, 0, 0, 0.23)
+}
+
+/* for nav buttons below each lesson */
+.btn-group, .btn-group-justified, .btn{
+    border-radius: 0px!important
+}
+
+.btn:link {
+    color:#FFA101
+}
+
+.btn:visited {
+    color:#FFA101
+}
+
+.btn:hover {
+    color:#FFA101
+}
+
+.btn:active {
+    color:#FFA101
+}
+
+/* for icons with "alpha" class */
+.alpha {
+    color:#FFA101;
+    font-weight:500;
+}
+
+/* for the "What's this?" button at the home page */
+.whats-this {
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 12px;
+    color: #D68600;
+}
+
+.export-to-pro-in-card {
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 12px;
+    color: #D68600;
+}
+
+.whats-this:link, .export-to-pro-in-card:link {
+    color:#D68600
+}
+
+.whats-this:visited, .export-to-pro-in-card:visited {
+    color:#FFA101
+}
+
+.whats-this:hover, .export-to-pro-in-card:hover {
+    color:#FFA101;
+    text-decoration: none
+}
+
+.whats-this:active, .export-to-pro-in-card:active {
+    color:#FFA101
+}
+
+
+/* for the output panels */
+.looklike {
+    background-color: white;
+    color: black;
+}
+
+/* for the file browser */
+#custom .alert-dialog {
+    width:80%;
+    background-color: #363636;
+}
+
+/* for the title of the file browser */
+.alert-dialog-title {
+    color: white;
+}
+
+/* for codes found on the lessons */
+code {
+    font-weight:600;
+    padding:2px 4px;
+    font-size:95%;
+    color:#ffffff;
+    background-color: rgba(6, 13, 11, 0.55);
+    border-radius:4px
+}
+
+/* for the list items on Quiz / Learning Progress page  */
+#qp-all-lessons > li {
+    background: rgba(255, 161, 1, 0.5);
+    color: white !important;
+    text-shadow: 1px 1px 1px #173459;
+}
+
+/* for the alert cards found in the lessons */
+.alert-info {
+    background-color: #0a2730;
+    color: white;
+    border: 1px solid #1f1f21
+}
+
+.alert-success {
+    background-color: #0a2730;
+    color: white;
+    border: 1px solid #1f1f21
+}
+
+.alert-danger {
+    background-color: #220807;
+    color: white;
+    border: 1px solid #1f1f21
+}
+
+.alert-warning {
+    background-color: #281903;
+    color: white;
+    border: 1px solid #1f1f21
+}
+
+/* for the color picker result in HTML/CSS Colors lesson */
+.color-lesson-blue {
+    color: lightblue;
+}
+
+.color-lesson-green {
+    color: lightgreen;
+}
+
+.color-lesson-brown {
+    color: lightsalmon;
+}
+
+.color-lesson-red {
+    color: lightpink;
+}
+
+/* for Learn JavaScript and Learn Python's exercise card */
+
+.full-exercise-container {
+    background-color: #112742;
+}
+
+.exercise-container {
+    background: #23241f;
+}
+.exercise-container pre {
+    color: #f8f8f2;
+}
+.exercise-container input {
+    background: #191916;
+}
+
+/* for the overlay loader */
+.pls .fa-spinner {
+    color: #FFA101;
+}
+
+/* for the tooltips */
+.tooltip-inner {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.tooltip.top .tooltip-arrow {
+	border-top-color: #ffffff
+}
+
+.tooltip.top-left .tooltip-arrow {
+	border-top-color: #ffffff
+}
+
+.tooltip.top-right .tooltip-arrow {
+	border-top-color: #ffffff
+}
+
+.tooltip.right .tooltip-arrow {
+	border-right-color: #ffffff
+}
+
+.tooltip.left .tooltip-arrow {
+	border-left-color: #ffffff
+}
+
+.tooltip.bottom .tooltip-arrow {
+	border-bottom-color: #ffffff
+}
+
+.tooltip.bottom-left .tooltip-arrow {
+	border-bottom-color: #ffffff
+}
+
+/* for quiiz buttons */
+.quiz button.disabled {
+    background-color: rgba(176, 176, 176, 0.74) !important;
+    color: rgba(255, 255, 255, 0.74) !important;
+}
+
+/* for the border of the items of the quiz results */
+
+.quiz .quizResults .answeredCorrect {
+    border-color:#245324
+}
+
+.quiz .quizResults .answeredWrong {
+    border-color:#621715
+}
+
+.quiz .quizResults .fa-check {
+    color:#245324
+}
+
+.quiz .quizResults .fa-remove {
+    color:#621715
+}
+
+/*  for Learn CSS's Play It Modal */
+#play-it .CodeMirror {
+    background-color: #363636;
+}
+
+.play-it-icons {
+    color: #FFA101
+}
+
+/* for the border of each quiz answer options */
+.quiz .quizQuestions ul.questionAnswers li{
+    border:1px solid #3b3b3b
+}
+
+/* for fontawesome icons */
+.fa {
+    color:#FFA101
+}
+
+/* for the WiFi icon when trying to take quiz but there's no connection */
+.fa-wifi {
+    color: #000;
+}
+
+/* for home cards */
+.home-card .col-xs-12 {
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.home-card .ons-icon {
+    font-size: 20px;
+}
+
+.home-card:hover {
+    transition: all 0.25s linear;
+}
+
+.home-card:active {
+    box-shadow: none;
+    outline: 0;
+    opacity: 1;
+    border: none;
+    background-color: rgba(102, 102, 102, 0.2);
+    transition: all 0.25s linear;
+}
+
+/* for the divider of the banner ad and keyboard additional keys */
+#keyboard-additional-keys-divider {
+    height: 12.5px;
+    background-color: #FFA101;
+}
